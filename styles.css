@@ -1,0 +1,244 @@
+/* Estilo geral do corpo do site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(125, 193, 236);
+    color: #0f0f0d;
+    margin: 0;
+}
+
+/* Cabeçalho do site */
+header {
+    background-color: rgb(79, 146, 253);
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Suavidade na mudança de cor */
+}
+
+nav ul li a:hover {
+    color: #ffde59; /* Efeito hover */
+}
+
+/* Seção de boas-vindas */
+.banner {
+    width: 100%;
+    height: 400px;
+    background: url('restaurantes-aconchegantes.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.botao {
+    width: 200px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    background-color: #69d06d;
+    color: #fff;
+}
+
+.botao:hover {
+    background-color: #57b956; /* Cor mais escura no hover */
+}
+
+/* Seção do menu */
+#menu {
+    padding: 50px 20px;
+    background-color: rgb(125, 193, 236);
+    color: #0f0f0d; /* Ajuste para legibilidade */
+}
+
+/* Layout dos itens do menu */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo dos itens do menu */
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Aumento ao passar o mouse */
+}
+
+/* Estilo da imagem do item */
+.menu-item img {
+    width: 100%;
+    max-width: 150px; /* Limite de tamanho */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilo da descrição do prato */
+.menu-description {
+    text-align: center;
+    color: #333;
+}
+
+.menu-item h3 {
+    font-size: 1.2rem;
+    color: #4f92fd;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+
+/* Seção de contato */
+#contato {
+    padding: 50px 20px;
+}
+
+/* Estilo do formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #69d06d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #57b956; /* Efeito hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+    }
+
+    .botao {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    form input, form textarea, form button {
+        width: 100%;
+    }
+
+    /* Layout vertical para menu-item em telas menores */
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-item img {
+        margin: 0 0 15px 0;
+    }
+}
+.hidden {
+    display: none;
+}
+/* Estilo geral da seção de promoções */
+#promocoes-semana {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+/* Estilo de cada promoção individual */
+.promocao {
+    max-width: 500px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #4f92fd;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo de hover para interatividade */
+.promocao:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do título da promoção */
+.promocao h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffdd57; /* Cor de destaque para o título */
+}
+
+/* Estilo do texto da promoção */
+.promocao p {
+    font-size: 1rem;
+    color: #f7f7f7;
+}

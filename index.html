@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores da Terra</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com o nome do restaurante e o menu de navegação -->
+    <header>
+        <h1>Sabores da Terra</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)" onclick="mostrarSecao('home')">Início</a></li>
+                <li><a href="javascript:void(0)" onclick="mostrarSecao('menu')">Menu</a></li>
+                <li><a href="javascript:void(0)" onclick="mostrarSecao('reservas')">Reservas</a></li>
+                <li><a href="javascript:void(0)" onclick="mostrarSecao('contato')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Seção de boas-vindas com botão Saiba Mais -->
+<section id="home">
+    <div class="banner">
+        <a href="javascript:void(0)" class="botao btn" onclick="mostrarSobreNos()">Saiba Mais</a>
+    </div>
+    <!-- Seção "Sobre Nós" inicialmente escondida -->
+    <div id="sobre-nos" style="display: none;">
+        <h2>Sobre Nós</h2>
+        <p>No Sabores da Terra, acreditamos que a verdadeira essência de uma boa refeição está nos ingredientes frescos e nos sabores autênticos. Nosso restaurante nasceu da paixão por honrar a rica culinária regional de Moçambique, oferecendo pratos que capturam a alma e a tradição da nossa terra.</p>
+
+        <p>Com um compromisso de utilizar ingredientes locais e frescos, nossa equipe prepara cada prato com dedicação, desde as receitas tradicionais moçambicanas até adaptações contemporâneas, sempre valorizando os sabores únicos da nossa região. Queremos proporcionar aos nossos clientes não apenas uma refeição, mas uma experiência que celebre a cultura e a gastronomia de Moçambique.</p>
+
+        <p>Nossa missão é criar um ambiente acolhedor onde amigos e famílias possam se reunir para desfrutar de refeições saudáveis, saborosas e preparadas com carinho. No Sabores da Terra, cada prato conta uma história, cada sabor evoca uma lembrança, e cada visita é uma celebração dos nossos costumes e tradições culinárias.</p>
+
+        <p>Venha nos visitar e explore o melhor da gastronomia moçambicana em um ambiente caloroso e acolhedor, onde o cliente é sempre o nosso convidado de honra.</p>
+    </div>
+
+    <div id="promocoes-semana">
+        <div id="Segunda-feira" class="promocao hidden">
+            <h3>Promoção de Segunda-feira</h3>
+            <p>Desconto especial de 20% em todas as saladas!</p>
+        </div>
+        <div id="Terça-feira" class="promocao hidden">
+            <h3>Promoção de Terça-feira</h3>
+            <p>Desconto especial de 10% em todas as sobremesas!</p>
+        </div>
+        <div id="Quarta-feira" class="promocao hidden">
+            <h3>Promoção de Quarta-feira</h3>
+            <p>Desconto especial de 20% em todas as saladas!</p>
+        </div>
+        <div id="Quinta-feira" class="promocao hidden">
+            <h3>Promoção de Quinta-feira</h3>
+            <p>Ganhe uma Bebida grátis ao pedir um prato principal!</p>
+        </div>
+        <div id="Sexta-feira" class="promocao hidden">
+            <h3>Promoção de Sexta-feira</h3>
+            <p>Desconto especial de 15%!</p>
+        </div>
+        <div id="Sabado" class="promocao hidden">
+            <h3>Promoção de Sabado</h3>
+            <p>Ganhe uma entrada grátis ao pedir uma refeicao para 6 pessoas</p>
+        </div>
+    </div>
+    
+    
+</section>
+    <div id="menu-section" style="display: none;"></div>
+
+    <!-- Seção de Menu -->
+    <section id="menu">
+        <h2>Nosso Cardápio</h2>
+        <h2>Entradas</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Chamuças de Carne</h3>
+                <p>Pastéis fritos recheados com carne temperada, ervilhas e especiarias.</p>
+                <img src="Chamucas.webp" alt="Chamuças de Carne" class="imagem-home">
+                <span>100 MZN</span>
+            </div>
+            <div class="menu-item">
+                <h3>Camarão à Guilho</h3>
+                <p>Camarões salteados em alho e azeite, servidos com fatias de limão.</p>
+                <img src="camarao-a-guilho.jpg" alt="Camarão à Guilho" class="imagem-home">
+                <span>100 MZN</span>
+            </div>
+            <div class="menu-item">
+                <h3>Bolinho de Peixe</h3>
+                <p>Bolinhos fritos feitos com peixe temperado e ervas, servidos com molho de pimenta.</p>
+                <img src="bolinho-de-peixe.jpg" alt="Bolinho de Peixe" class="imagem-home">
+                <span>100 MZN</span>
+            </div>
+            <div class="menu-item">
+                <h3>Salada de Polvo</h3>
+                </p>Polvo cozido e picado, temperado com cebola, coentro, pimentão e molho de limão.</p>
+                <img src="Salada de polvo.jpg" alt="Salada de Polvo" class="imagem-home">
+                <span>150 MZN</span>
+            </div>
+            <div class="menu-item">
+                <h3>Salada de Frutas Tropicais</h3>
+                </p>Mistura refrescante de frutas da estação servida com um toque de limão.</p>
+                <img src="Salada de frutas.jpg" alt="Salada de Frutas Tropicais" class="imagem-home">
+                <span>150 MZN</span>
+            </div>
+        </div>
+        <H2>Prato Principal</H2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Grelhado de Peixe com Salada</h3>
+                <p>Grelhado de peixe fresco, temperado com ervas e limão, acompanhado por uma salada crocante e colorida. Uma opção leve e saudável.</p>
+                <img src="peixe-grelhado-com-legumes.jpg" alt="peixe grelhado com legumes" class="imagem-home">
+                <span>200 MZN</span>
+            </div>
+            <div class="menu-item">
+                <h3>Matapa com Carangueijo</h3>
+                <p>A "Matapa com Caranguejo" é um prato tradicional moçambicano, feito com folhas de mandioca acompanhado de caranguejo fresco, criando uma refeição autêntica e saborosa.</p>
+                <img src="matapa.png" alt="Matapa com Carangueijo" class="imagem-home">
+                <span>250 MZN</span>
+            </div>
+            <div class="menu-item">
+                <h3>Frango a Zambeziana</h3>
+                <p>O "Frango à Zambeziana" é um prato típico de Moçambique, preparado com frango marinado em leite de coco. Este prato é caracterizado por seu sabor suave e levemente picante.</p>
+                <img src="frango.jpeg" alt="Frango a Zambeziana" class="imagem-home">
+                <span>250 MZN</span>
+            </div>
+            <div class="menu-item">
+                <h3>Cacana</h3>
+                <p>A "Cacana" é um prato tradicional moçambicano feito com folhas da planta rasteira cacana. De sabor cremoso e levemente amargo,sendo uma verdadeira iguaria local.</p>
+                <img src="cacana.jpg" alt="Cacana" class="imagem-home">
+                <span>250 MZN</span>
+            </div>
+            <div class="menu-item">
+                <h3>Frango de Amendoim</h3>
+                <p>O "Frango de Amendoim" é um prato moçambicano preparado com pedaços de frango cozidos em um molho cremoso à base de amendoim triturado, alho, tomate e especiarias.</p>
+                <img src="caril de amendoim.jpeg" alt="IFrango de Amendoim" class="imagem-home">
+                <span>250 MZN</span>
+            </div>
+            <div class="menu-item">
+                <h3>Folhas de Batata doce</h3>
+                <p>"Folhas de Batata Doce 'Madhledhlele'" é um prato tradicional moçambicano feito com folhas de batata-doce cozidas.</p>
+                <img src="folha de batata.jpg" alt="Folhas de Batata doce" class="imagem-home">
+                <span>250 MZN</span>
+            </div>
+        </div>
+        <H2>Sobremesas</H2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Gelado de Coco  </h3>
+                <p>Gelado cremoso feito com leite de coco.</p>
+                <img src="Gelado de coco.webp" alt="Gelado de Coco" class="imagem-home">
+                <span>75 MZN</span>
+            </div>
+            <div class="menu-item">
+                <h3>Banana Frita com Mel e Canela</h3>
+                <p>Rodelas de banana fritas e cobertas com mel e um toque de canela.</p>
+                <img src="banana-assada-com-canela-1.jpeg" alt="Banana Frita com Mel e Canela" class="imagem-home">
+                <span>75 MZN</span>
+            </div>
+            <div class="menu-item">
+                <h3>Yogurt de Malambe</h3>
+                <p>Uma sobremesa saudável e exótica feita com o fruto do baobá (malambe).</p>
+                <img src="Malambe.jpeg" alt="Yogurt de Malambe" class="imagem-home">
+                <span>75 MZN</span>
+            </div>
+            <div class="menu-item">
+                <h3>Pure de Abacate</h3>
+                <p>Sobremesa cremosa e refrescante feita com abacate maduro.</p>
+                <img src="Abacate.jpg" alt="Pure de Abacate" class="imagem-home">
+                <span>75 MZN</span>
+            </div>
+
+    </section>
+<!-- Seção de Reservas -->
+    <section id="reservas" style="display:none;">
+        <h2>Faça já a sua Reserva</h2>
+        <form id="reserva-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="pessoas">Número de Pessoas:</label>
+            <input type="number" id="pessoas" name="pessoas" min="1" required>
+
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+  <!-- Seção de Contato -->
+  <section id="contato">
+    <h2>Contacto</h2>
+    <form id="contact-form" onsubmit="return validarFormulario()">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <!-- Informações adicionais de contacto -->
+    <h3>Informações de Contacto</h3>
+    <p>Endereço: Bairro de Bagamoio, Maputo</p>
+    <p>Telefone: +258 86 561 2935</p>
+    <p>Email: info@saboresdaterra.com</p>
+
+    <!-- Mapa interativo do Google Maps -->
+    <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.8169092895236!2d32.593357273420575!3d-25.965938047631695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef747d1362f6393%3A0x36b0c760756f4ad5!2sBairro%20do%20Bagamoio%2C%20Maputo!5e0!3m2!1spt-PT!2smz!4v1697643256456!5m2!1spt-PT!2smz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Sabores da Terra. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="scripts.js"></script>
+    <script>
+         function mostrarSecao(secao) {
+            document.querySelectorAll('section').forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(secao).style.display = 'block';
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            mostrarSecao('home');
+        });
+
+        function mostrarSobreNos() {
+            var sobreNos = document.getElementById('sobre-nos');
+            if (sobreNos.style.display === 'none') {
+                sobreNos.style.display = 'block';
+            } else {
+                sobreNos.style.display = 'none';
+            }
+        }
+        
+    </script>
+    <script>
+        function validarFormulario() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var assunto = document.getElementById('assunto').value;
+            var mensagem = document.getElementById('mensagem').value;
+
+            if (nome === "" || email === "" || assunto === "" || mensagem === "") {
+                alert("Por favor, preencha todos os campos.");
+                return false;
+            }
+
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Por favor, insira um email válido.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
